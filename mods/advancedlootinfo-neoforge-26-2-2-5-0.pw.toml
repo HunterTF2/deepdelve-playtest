@@ -1,0 +1,13 @@
+name = "Advanced Loot Info (ALI)"
+filename = "AdvancedLootInfo-neoforge-26.2-2.5.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/PEPVViac/versions/giv1jsNE/AdvancedLootInfo-neoforge-26.2-2.5.0.jar"
+hash-format = "sha512"
+hash = "f315181b50a8902adec1ba321f01a749516c02377d0574f2a5b3bcb9c718db6b07146b3d7426bdac37260091553ab27932ee17a4d30949cabf7478d442bcfe3a"
+
+[update]
+[update.modrinth]
+mod-id = "PEPVViac"
+version = "giv1jsNE"

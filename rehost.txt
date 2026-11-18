@@ -1,0 +1,5 @@
+# Files Modrinth doesn't have. Each is only put in the pack (on the repo's public 'external'
+# release) once its line is uncommented here: check the mod's licence allows re-hosting first.
+configured-neoforge-26.2-2.7.5-patched.jar
+create-adapted-26.2-1.31-public-external-assets.jar
+latent_enchantments-0.2.2.jar

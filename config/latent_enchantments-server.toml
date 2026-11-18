@@ -1,0 +1,290 @@
+#How constellations are laid out. Changes only affect constellations placed afterwards.
+[sky]
+	#Minimum angle in degrees between two constellations.
+	# Default: 18.0
+	# Range: 0.0 ~ 90.0
+	minSeparation = 18.0
+	#How wide a constellation is in the sky, in degrees.
+	# Default: 8.0
+	# Range: 1.0 ~ 40.0
+	constellationSize = 8.0
+	#How wide a treasure-layer constellation is, in degrees. Bigger than the usual ones, so the deep-field
+	#lens frames them the way the narrow lens frames the usual ones. Their spacing and how far off bearing and
+	#elevation can be grow in proportion.
+	# Default: 15.0
+	# Range: 1.0 ~ 60.0
+	treasureConstellationSize = 15.0
+	#Whether the treasure layer has the phantom: a constellation that reads like a treasure enchantment
+	#until it's captured, and then summons a giant phantom near the telescope.
+	phantomConstellation = true
+	#Ordinary background stars across the whole sky. They show up on photos but aren't constellations.
+	# Default: 600
+	# Range: 0 ~ 5000
+	fieldStars = 600
+	#Lowest elevation in degrees a constellation can sit at. The default, 10, is where the observatory dome's slit starts.
+	# Default: 10.0
+	# Range: 0.0 ~ 80.0
+	minElevation = 10.0
+
+#How precise a shot is. Each dial's error is a share of its capture range: 0 is spot on, 1 is the edge.
+#A plate's precision is 100% minus the root mean square of the dials' shares, so every dial's error counts;
+#past any one dial's edge, nothing is captured.
+[exposure]
+	#Bearing or elevation error in degrees beyond which nothing is captured (for the most common enchantments). Applies to each dial separately.
+	#The default, 15, is half the no-lens view: anything a shot without a lens frames can be captured.
+	# Default: 15.0
+	# Range: 1.0 ~ 90.0
+	skyCaptureRadius = 10.0
+	#Focus error (on the 0–48 dial) beyond which nothing is captured, for the most common enchantments. Focus must be exact for a perfect shot.
+	# Default: 6
+	# Range: 1 ~ 48
+	focusCaptureSteps = 6
+	#Twist error in clicks (18° each, 20 in a turn) beyond which nothing is captured. The default, 5, makes each
+	#shot cover just over half a turn, so upright then upside down always finds it. Twist must be exact for a perfect shot.
+	# Default: 5
+	# Range: 0 ~ 10
+	twistCaptureClicks = 2
+	#Observatory aperture error in stops beyond which nothing is captured. Aperture must be exact for a perfect shot.
+	# Default: 4
+	# Range: 0 ~ 8
+	apertureCaptureStops = 4
+	#Bearing, elevation and focus capture ranges are multiplied by this for the rarest enchantments (weight 1),
+	#scaling up to 1.0 at weight 10.
+	# Default: 0.5
+	# Range: 0.1 ~ 1.0
+	rareTolerance = 0.5
+	#Bearing or elevation error in degrees that still counts as spot on with the handheld telescope (tier 1),
+	#which is aimed by hand. Scaled up for the treasure layer's bigger constellations.
+	# Default: 2.0
+	# Range: 0.0 ~ 10.0
+	spotOnHandheld = 2.0
+	#Bearing or elevation error in degrees that still counts as spot on with the stationary telescope (tier 2).
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	spotOnStationary = 1.0
+	#Bearing or elevation error in degrees that still counts as spot on with the observatory (tier 3): 0, exact.
+	# Default: 0.0
+	# Range: 0.0 ~ 10.0
+	spotOnObservatory = 0.0
+	#Focus error beyond which a constellation's stars vanish from the photo. The default, 9, is a tick and a half
+	#on the focus dial (a tick every 6), so shots at the major ticks (6, 24 and 42) always show the stars by the third.
+	# Default: 9
+	# Range: 1 ~ 48
+	focusVisibleSteps = 9
+
+#Telescope lenses. A field of view is the photo's full width in dial degrees (60 = 30 either side of centre).
+[lenses]
+	#Field of view with no lens fitted.
+	# Default: 30.0
+	# Range: 5.0 ~ 90.0
+	fieldOfView = 30.0
+	#Field of view with the wide lens fitted. Good for getting a constellation into frame.
+	# Default: 60.0
+	# Range: 5.0 ~ 120.0
+	wideLensFieldOfView = 60.0
+	#Field of view with the narrow lens fitted. Good for fine-tuning.
+	# Default: 16.0
+	# Range: 2.0 ~ 90.0
+	narrowLensFieldOfView = 16.0
+	#Field of view with the deep-field lens fitted. It sees only the treasure layer.
+	# Default: 30.0
+	# Range: 2.0 ~ 120.0
+	deepFieldLensFieldOfView = 30.0
+
+#Photographic paper: how long each paper exposes. How clear a plate each makes is under quality.
+[paper]
+	# Default: 2.0
+	# Range: 0.05 ~ 120.0
+	fastExposureSeconds = 2.0
+	# Default: 5.0
+	# Range: 0.05 ~ 120.0
+	mediumExposureSeconds = 5.0
+	# Default: 12.5
+	# Range: 0.05 ~ 120.0
+	slowExposureSeconds = 12.5
+
+#The tier 1 (handheld) telescope. It has no lens slot, so it always sees as much sky as a telescope with no lens.
+#While it exposes, the view drifts and the player holds their aim. A circle marks where the shot started; while
+#the crosshair is outside it, it grows. If it grows past the ruin size the exposure is ruined; otherwise its growth
+#smears the photo, which costs precision like a bearing error.
+[handheld]
+	#How fast the view drifts while exposing, in degrees per second (typical speed in each direction). 0 turns drift off.
+	# Default: 1.5
+	# Range: 0.0 ~ 10.0
+	handheldDrift = 1.5
+	#Starting radius of the steadiness circle, in degrees.
+	# Default: 1.5
+	# Range: 0.1 ~ 20.0
+	handheldCircleRadius = 1.5
+	#The exposure is ruined once the circle grows past this radius, in degrees.
+	# Default: 6.0
+	# Range: 0.5 ~ 45.0
+	handheldRuinRadius = 6.0
+	#Degrees of smear added to the photo for each degree the circle grew. Half the smear counts as a bearing error.
+	# Default: 2.0
+	# Range: 0.0 ~ 10.0
+	handheldSmearPerDegree = 2.0
+
+#The tier 3 telescope (observatory). It sits on the centre of a filled circle of copper blocks, under a
+#fitted copper dome. It's the only telescope with an aperture knob (see apertureCaptureStops).
+[observatory]
+	#Diameter of the copper floor in blocks (odd, so the telescope has a centre block). The dome matches it.
+	# Default: 13
+	# Range: 5 ~ 25
+	observatoryFloorDiameter = 13
+	#How many of the floor's blocks may be trapdoors (any kind), so players can climb in from below.
+	# Default: 4
+	# Range: 0 ~ 16
+	observatoryFloorHatches = 4
+
+#How good a plate is, and what level that's worth. All numbers are percentages.
+#A plate's quality is its precision (see exposure) times the telescope's, the paper's and the lens's numbers below.
+#Each enchantment's max level sets a floor, the quality level I needs, and a ceiling, the quality its max level
+#needs; the levels between are spread evenly. Below the floor, nothing is captured.
+[quality]
+	#The handheld telescope (tier 1). It has no lens slot, so its fixed view is part of this number.
+	# Default: 60
+	# Range: 0 ~ 100
+	tier1Quality = 60
+	#The stationary telescope (tier 2).
+	# Default: 80
+	# Range: 0 ~ 100
+	tier2Quality = 80
+	#The observatory telescope (tier 3).
+	# Default: 100
+	# Range: 0 ~ 100
+	tier3Quality = 100
+	# Default: 59
+	# Range: 0 ~ 100
+	fastPaperQuality = 59
+	# Default: 79
+	# Range: 0 ~ 100
+	mediumPaperQuality = 79
+	# Default: 100
+	# Range: 0 ~ 100
+	slowPaperQuality = 100
+	#Lenses fitted to tier 2 and 3 telescopes. A view framed tight on the constellation makes a better plate.
+	# Default: 100
+	# Range: 0 ~ 100
+	narrowLensQuality = 100
+	# Default: 90
+	# Range: 0 ~ 100
+	noLensQuality = 90
+	# Default: 75
+	# Range: 0 ~ 100
+	wideLensQuality = 75
+	#The only lens that sees treasure enchantments, so below 100 their top levels get harder to reach.
+	# Default: 100
+	# Range: 0 ~ 100
+	deepFieldLensQuality = 100
+	#Enchantments whose max level is I: the quality it takes to capture them at all.
+	# Default: 60
+	# Range: 0 ~ 100
+	maxLevel1Floor = 60
+	#Enchantments whose max level is II to V: the floor (level I) and ceiling (max level) for each.
+	#Enchantments with a max above V use the V numbers.
+	# Default: 40
+	# Range: 0 ~ 100
+	maxLevel2Floor = 40
+	# Default: 95
+	# Range: 0 ~ 100
+	maxLevel2Ceiling = 95
+	# Default: 30
+	# Range: 0 ~ 100
+	maxLevel3Floor = 30
+	# Default: 95
+	# Range: 0 ~ 100
+	maxLevel3Ceiling = 95
+	# Default: 25
+	# Range: 0 ~ 100
+	maxLevel4Floor = 25
+	# Default: 95
+	# Range: 0 ~ 100
+	maxLevel4Ceiling = 95
+	# Default: 20
+	# Range: 0 ~ 100
+	maxLevel5Floor = 20
+	# Default: 95
+	# Range: 0 ~ 100
+	maxLevel5Ceiling = 95
+	#Treasure enchantments' floors and ceilings are this many points higher (never above 100).
+	# Default: 20
+	# Range: 0 ~ 100
+	treasureQualityShift = 20
+
+#Hints from infusing origami at the infusion table. A hint names a spot near the constellation.
+#Its strength is a miss rate: the chance that a shot aimed at the spot, through the lens that sees its layer (wide,
+#or deep-field for the treasure layer), doesn't frame the constellation. It falls in a straight line from the
+#no-bookshelf value to none at the bookshelf cap (see difficulty), where the whole figure is always in frame.
+#Hints are fixed per world and can't be combined to narrow things down.
+[hints]
+	#Wide-lens miss rate with no bookshelves (0.5 = half of first shots miss).
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	hintMissRateNoBookshelves = 0.5
+	#The closest a hint's spot can be to its constellation, in degrees, so a hint never gives the exact settings
+	#away. The default, 15, is half the wide lens's view: the spot is always in the outer half of the frame. Scaled
+	#with the frame, so half that in the treasure layer's deep-field frame. Keep it under half the wide lens's view.
+	# Default: 15.0
+	# Range: 0.0 ~ 28.0
+	hintMinOffset = 15.0
+
+#Costs and requirements at the infusion table: the main difficulty settings.
+#Costs are in experience levels, and each option also costs the same number of lapis unless stated.
+[difficulty]
+	#Bookshelves beyond this count add no more hint strength or cost (vanilla's enchanting table caps at 15).
+	#Every bookshelf count, even above the cap, still shuffles which enchantments are offered.
+	# Default: 15
+	# Range: 0 ~ 64
+	bookshelfCap = 15
+	#How many sheets of plain paper one infusion turns into photographic paper.
+	# Default: 4
+	# Range: 1 ~ 64
+	sheetsPerInfusion = 4
+	#Levels (and lapis) to infuse fast paper.
+	# Default: 1
+	# Range: 0 ~ 30
+	fastPaperCost = 1
+	#Levels (and lapis) to infuse medium paper.
+	# Default: 2
+	# Range: 0 ~ 30
+	mediumPaperCost = 2
+	#Levels (and lapis) to infuse slow paper.
+	# Default: 3
+	# Range: 0 ~ 30
+	slowPaperCost = 3
+	#Experience level the player must have to infuse each paper, on top of being able to pay.
+	#The slower the paper, the further into the game it comes. 0 = no extra requirement.
+	# Default: 5
+	# Range: 0 ~ 100
+	fastPaperMinimumLevel = 5
+	# Default: 10
+	# Range: 0 ~ 100
+	mediumPaperMinimumLevel = 10
+	# Default: 15
+	# Range: 0 ~ 100
+	slowPaperMinimumLevel = 15
+	#Share (in %) of a plate's paper cost given back as experience when the plate is ground up at a grindstone.
+	#The cost counted is the least anyone could have paid: the levels just below the paper's required level,
+	#split between the sheets one infusion makes. Kept under 100% so grinding never pays.
+	# Default: 50
+	# Range: 0 ~ 99
+	plateRefundPercent = 50
+	#Levels (and lapis) one hint costs with no bookshelves. The cost rises evenly to the at-cap cost.
+	# Default: 1
+	# Range: 0 ~ 30
+	hintCostNoBookshelves = 1
+	#Levels (and lapis) one hint costs at the bookshelf cap.
+	# Default: 3
+	# Range: 0 ~ 30
+	hintCostAtCap = 3
+	#Experience level the player must have to make a hint with no bookshelves, on top of being able to pay.
+	#It rises evenly with bookshelves, like the hint's strength and cost, to the at-cap level.
+	# Default: 0
+	# Range: 0 ~ 100
+	hintMinimumLevelNoBookshelves = 0
+	#Experience level the player must have to make a hint at the bookshelf cap (full strength).
+	#The same as slow paper's by default.
+	# Default: 15
+	# Range: 0 ~ 100
+	hintMinimumLevelAtCap = 15

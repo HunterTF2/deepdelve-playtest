@@ -1,0 +1,27 @@
+{
+  "_about": [
+    "Ore veins in the Anaerobic Abyss (DeepDelve). Edit and save: new Abyss chunks use it at once, no restart.",
+    "Chunks already generated keep their ores. Delete this file to get the defaults back.",
+    "all_veins_multiplier: scales veins_per_chunk of every vein (0.5 = half as many veins, 2 = twice).",
+    "veins_per_chunk: veins in one Abyss chunk on average. 2.5 = two, plus a third half the time; 0.25 = one chunk in four.",
+    "ores: block id -> weight. Each block of a vein is picked by weight (zinc 3, lead 2 = three fifths zinc).",
+    "size_min / size_max: blocks in one vein (a random walk from a start just behind the cave's floor or ceiling).",
+    "in_sapropel: half of the veins go in the sapropel soil instead of the rock (siderite nodules).",
+    "Veins only replace the stratum's rock (and sapropel, if in_sapropel). An ore id that isn't registered is skipped."
+  ],
+  "all_veins_multiplier": 1.0,
+  "veins": [
+    { "name": "pyrite", "ores": { "deepdelve:deepslate_pyrite_ore": 1 },
+      "veins_per_chunk": 4.0, "size_min": 3, "size_max": 7, "in_sapropel": false },
+    { "name": "zinc and lead", "ores": { "deepdelve:deepslate_zinc_ore": 3, "deepdelve:deepslate_lead_ore": 2 },
+      "veins_per_chunk": 2.0, "size_min": 4, "size_max": 8, "in_sapropel": false },
+    { "name": "vanadium", "ores": { "deepdelve:deepslate_vanadium_ore": 1 },
+      "veins_per_chunk": 1.0, "size_min": 3, "size_max": 5, "in_sapropel": false },
+    { "name": "molybdenum", "ores": { "deepdelve:deepslate_molybdenum_ore": 1 },
+      "veins_per_chunk": 0.5, "size_min": 2, "size_max": 4, "in_sapropel": false },
+    { "name": "uranium", "ores": { "deepdelve:deepslate_uranium_ore": 1 },
+      "veins_per_chunk": 0.333, "size_min": 2, "size_max": 4, "in_sapropel": false },
+    { "name": "siderite nodules", "ores": { "deepdelve:deepslate_siderite_ore": 1 },
+      "veins_per_chunk": 2.0, "size_min": 2, "size_max": 4, "in_sapropel": true }
+  ]
+}

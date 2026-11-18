@@ -1,0 +1,8 @@
+name = "create-adapted-26.2-1.31-public-external-assets"
+filename = "create-adapted-26.2-1.31-public-external-assets.jar"
+side = "both"
+
+[download]
+url = "https://github.com/HunterTF2/deepdelve-playtest/releases/download/external/create-adapted-26.2-1.31-public-external-assets.jar"
+hash-format = "sha256"
+hash = "2489d8344a121c6751df05265abee4397d014986cacaf1a1b4bbbc61488a9dba"

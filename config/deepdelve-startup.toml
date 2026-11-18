@@ -1,0 +1,16 @@
+[modules]
+	#DeepDelve's kinetic power and item transport: shafts, cogwheels, gearboxes, pulleys, belts,
+	#funnels, chutes and bucket elevators.
+	#  AUTO - on, unless Create is installed (then Create's kinetics are used instead).
+	#  ON   - always on.
+	#  OFF  - always off.
+	#Off, those blocks stay in worlds but stop turning, can't be crafted, and are hidden from the
+	#creative tab and JEI. Machines and engines stay. Needs a restart.
+	#Allowed Values: AUTO, ON, OFF
+	kinetics = "AUTO"
+
+[create]
+	#With Create installed: crushing our raw ores in Create's crushing wheels also gives Create's
+	#experience nuggets (75% chance, as Create's own ore recipes do). Off, nothing makes them and
+	#the nugget and its block are hidden from JEI and the creative tabs. Needs a restart.
+	experienceNuggets = false

@@ -1,0 +1,8 @@
+name = "configured-neoforge-26.2-2.7.5-patched"
+filename = "configured-neoforge-26.2-2.7.5-patched.jar"
+side = "client"
+
+[download]
+url = "https://github.com/HunterTF2/deepdelve-playtest/releases/download/external/configured-neoforge-26.2-2.7.5-patched.jar"
+hash-format = "sha256"
+hash = "6fe0242274c7c5c8dd8c3e002d8cf662b7ffe9633c01c9c0fc220801aac4dfe1"

@@ -1,0 +1,282 @@
+#Worldgen settings
+[worldgen]
+	#Number of titanium ore veins attempted per chunk
+	# Default: 4
+	# Range: 0 ~ 64
+	titaniumOreVeinsPerChunk = 4
+	#Number of ore blocks per titanium vein
+	# Default: 6
+	# Range: 1 ~ 64
+	titaniumOreVeinSize = 6
+	#Minimum Y level titanium ore can generate at
+	# Default: -32
+	# Range: -64 ~ 320
+	titaniumOreMinY = -32
+	#Maximum Y level titanium ore can generate at
+	# Default: 32
+	# Range: -64 ~ 320
+	titaniumOreMaxY = 32
+	#As grass regrows, saplings of the biome's own trees sprout now and then, back to the biome's tree
+	#density and no further, in spring, where a tree has room and 15 blocks from any build
+	#(farming/SaplingRegrowth, docs/Sapling Regrowth.md)
+	saplingRegrowth = true
+
+#Heat settings (docs/Hot Metal.md)
+[heat]
+	#Hottest the Kiln's brick lining survives, in degrees C. The Kiln reaches
+	#min(fuel temperature, this). 1150 is common brick (docs/Heat Model.md), which
+	#is below iron's 1538: iron heats for forging but does not melt. Raise it to
+	#let the Kiln melt iron until the Foundry can.
+	# Default: 1150
+	# Range: 100 ~ 5000
+	kilnLiningLimit = 1150
+	#Whether carrying hot metal hurts (tongs in the off hand, Fire Resistance
+	#and creative mode protect)
+	hotItemsBurn = true
+
+#Seasons (docs/Seasons.md)
+[seasons]
+	#Whether the surface's air follows the seasons
+	enabled = true
+	#In-game days in each season; a year is four seasons
+	# Default: 14
+	# Range: 1 ~ 1000
+	daysPerSeason = 14
+	#Degrees C colder at mid-winter, in a biome with the full swing
+	# Default: 25.0
+	# Range: 0.0 ~ 100.0
+	winterDrop = 25.0
+	#Degrees C warmer at mid-summer, in a biome with the full swing
+	# Default: 15.0
+	# Range: 0.0 ~ 100.0
+	summerRise = 15.0
+	#Hours of daylight more at mid-summer and fewer at mid-winter than the equinoxes' 12
+	#(season/DayLength): 3 is 15 hours of light in summer, 9 in winter. 0 keeps vanilla's days
+	# Default: 3.0
+	# Range: 0.0 ~ 6.0
+	daylightSwing = 3.0
+	#How many of vanilla's 20-minute days one day lasts (season/DayScale): 2 is a 40-minute day.
+	#The sun and moon slow to match, and everything counted in days stretches with it: food
+	#spoilage, sleeplessness, crops and fruit, animals growing up and breeding, compost, springs,
+	#torches and candles, snares. Machines, smelting and weather don't
+	# Default: 1.0
+	# Range: 0.25 ~ 10.0
+	dayLength = 1.0
+
+#Combat
+[combat]
+	#Show every hit a player takes or deals, split into its damage components
+	#(slashing, piercing, bludgeoning, projectile, magic, electric, blast), on the action bar
+	debugDamageComponents = false
+	#Whether the blast part of a hit warms the body it lands on (temperature/BlastHeat,
+	#2026-10-28). Off: explosions still hurt, but leave the body's temperature alone
+	blastHeat = true
+	#How far off the crosshair, in degrees, a mob can be and still be the one a melee hit (hostile mobs only)
+	#or an aimed ability goes to, when the crosshair itself is on nothing; never another player
+	#(combat/Targeting; 0 turns it off)
+	# Default: 20.0
+	# Range: 0.0 ~ 45.0
+	aimGrace = 20.0
+
+#Fluids (docs/Finite Fluids.md)
+[fluids]
+	#Rain slowly tops up water surfaces open to the sky (only with finite fluids on)
+	rainRefillsWater = true
+	#Shallow water (a quarter block or less) slowly dries, faster the warmer the air
+	#(only with finite fluids on)
+	waterEvaporates = true
+	#EXPERIMENTAL, on by default for testing. Water, lava and the mod's liquids are finite: every
+	#block holds 1-8 eighths, spreading shares it out, and nothing makes more (the sea,
+	#rivers and the Nether's lava sea stay endless). Off: they flow as in vanilla.
+	#The mod's gases follow the finite rules either way.
+	experimentalFiniteFluids = true
+
+#Mining: how long a block takes grows with its band (event/BandMiningSpeed)
+[mining]
+	#Extra mining time per band of the block, for any tool: time x (1 + this x band).
+	#0.25: a band VII block takes 2.75 times as long as its hardness alone says
+	# Default: 0.25
+	# Range: 0.0 ~ 10.0
+	bandSlowdown = 0.25
+	#Mining time is multiplied by this for each band the tool falls short of the block
+	#(a bare hand or the wrong kind of tool counts as band 0). 2: each band short doubles it
+	# Default: 2.0
+	# Range: 1.0 ~ 10.0
+	underBandPenalty = 2.0
+	#The most the under-band penalty can be for an ore taken whole (event/UnworkedOres):
+	#a pickaxe that can mine the rock an ore is set in, but not the ore, breaks it out as the
+	#ore block itself. 2: at most twice as long as the right tool
+	# Default: 2.0
+	# Range: 1.0 ~ 1000.0
+	unworkedOrePenaltyCap = 2.0
+
+#Lighting: torches and lanterns burn fuel and go out (docs/Lighting.md)
+[lighting]
+	#Master switch. Off: every torch and lantern burns for ever, as in vanilla
+	lighting = true
+	#How long a coal torch burns, in in-game days. Other heads by their fuel's furnace burn time
+	#against coal's 1600 ticks (75 torch ticks a furnace tick at 5); a crafted torch give or take 15 %
+	# Default: 5.0
+	# Range: 0.05 ~ 1000.0
+	torchBurnDays = 2.0
+	#Rain or snow falling on a torch puts it out
+	rainDousesTorches = true
+	#A lantern burns its fuel as long as a torch head of it would (torchBurnDays), times this.
+	#It holds one item of a solid fuel or 100 mB of a liquid one
+	# Default: 1.0
+	# Range: 0.05 ~ 1000.0
+	lanternBurnMultiplier = 1.0
+	#A lit torch or lantern on the ground or in an item frame lights the world by putting an invisible
+	#light block where it lies (no client mod needed, but the light moves a block at a time).
+	#Off: LambDynamicLights lights them, smoothly, on clients that have it
+	droppedLightBlocks = false
+	#Some pillagers carry a hand cannon (a matchlock in the later waves of a raid) instead of a crossbow
+	illagerGuns = true
+	#The chance a pillager that spawns away from a raid carries a gun
+	# Default: 0.04
+	# Range: 0.0 ~ 1.0
+	illagerGunRate = 0.04
+	#A pillager in a raid is this many times as likely to carry a gun
+	# Default: 4.0
+	# Range: 0.0 ~ 25.0
+	illagerGunRaidMultiplier = 4.0
+
+#Compatibility switches. Each can be turned off on a running server (the file is reread when saved)
+[compat]
+	#Send Just Enough Resources' data (ores, loot, spawns, plants) to joining players who have JER
+	#(compat/jer/JerSync). Off: their JER pages show JER's own defaults. Takes effect for the next join
+	jerSync = true
+	#Create's belts, chutes, tunnels, funnels and depots wear from hot items and give way, and a burnt
+	#belt stops until mended (compat/create/CreateBelts). Off: no wear, and stopped belts run again
+	createScorch = true
+	#Rawhide, leather and rubber Create belts carry no faster than their tier (16, 32, 64 RPM).
+	#Off: every belt runs at its shaft's speed. Set it the same on the server and the clients
+	#(clients only draw the belt scrolling by it)
+	createBeltSpeedLimits = true
+
+#Sleep (docs/Sleep Catch-Up.md)
+[sleep]
+	#EXPERIMENTAL, on by default for testing. A night slept through passes for everything:
+	#machines run, fires burn down, hot metal cools, crops and plants grow, players' meters
+	#move (thirst and hunger at half the resting rate). Off: sleep skips the night as in
+	#vanilla, and anything that runs on ticks loses it.
+	experimentalSleepCatchUp = true
+
+#Weather (docs/Weather.md): switches for its parts, all on by default
+[weather]
+	#Client, master switch: off hides ALL of the weather's looks and leaves the weather itself running. No fog, dust or whiteout closing in, no storms, dust walls or fog banks on the horizon, no gloom under cloud, no shader-pack storms or clouds of ours, no wind slant or drift, no hail, no drought or wet-spell tints; the sky is vanilla's, with vanilla's rain where it rains. Rain, wind, hail damage, sandstorms and the rest still happen. The switches below are for picking parts when this is on (weather/WeatherConfig#visuals)
+	visuals = false
+	#Severe winds push exposed players and mobs (weather/WindEffects)
+	windPush = true
+	#Strong winds make arrows, thrown things and dropped items drift (weather/WindEffects)
+	windDrift = true
+	#Strong winds blow out exposed torches and lanterns (weather/Wind; the Gamma Grove's gusts keep their own rule)
+	windPutsOutLights = true
+	#Fog, a sandstorm's dust and a blizzard's whiteout shorten how far mobs see you (weather/Fog, weather/Dust)
+	mobsLoseSight = true
+	#Hail hurts exposed players and mobs without a helmet (weather/Hail)
+	hailDamage = true
+	#Hail knocks crops back a growth stage (weather/Hail)
+	hailCrops = true
+	#Sandstorms pile sand drifts (weather/SandDrifts)
+	sandDrifts = true
+	#Monsoons flood (weather/Flooding; only with finite fluids on)
+	flooding = true
+	#Blizzards pile deep snow (weather/Blizzard)
+	blizzardSnow = true
+	#Wind makes cold air feel colder (weather/Blizzard#chill)
+	windChill = true
+	#Crops don't grow in a cold snap's frost (weather/AirMasses)
+	frost = true
+	#Dry thunderstorms' lightning sets extra fires (weather/AirMasses)
+	dryLightningFires = true
+	#Droughts and wet spells change farmland, springs, drying, fire, moss and mushrooms (weather/Spells; their rain always changes)
+	spellEffects = true
+	#Animals out in a storm look for cover (weather/StormShelter)
+	animalsShelter = true
+	#Villagers go indoors in a storm (weather/StormShelter)
+	villagersShelter = true
+	#Client: fog, dust and whiteouts close in your view (weather/client/FogClient; mobs' sight is mobsLoseSight)
+	fogVisuals = true
+	#Client: storms, dust walls and fog banks drawn on the horizon (weather/client/StormVisuals)
+	horizonVisuals = true
+	#Client: the sound of the wind (weather/client/WindSound)
+	windSound = true
+	#Client: how far round you falling rain and snow are drawn, blocks (vanilla's Weather Radius setting is at most 10; the larger of the two is used; mixin/WeatherEffectRendererMixin)
+	# Default: 32
+	# Range: 5 ~ 48
+	rainRadius = 32
+	#Client: rain you're not under is heard from up to 96 blocks off, from its side (weather/client/RainSound)
+	distantRainSound = true
+	#Client: rain and snow slant and leaves and smoke drift in the wind
+	windVisuals = true
+	#Client: grass and leaves brown in a drought and deepen in a wet spell (weather/client/SpellTints)
+	spellTints = true
+	#Zombies, skeletons and the like don't burn under a cloud cover of 0.6 or more (weather/Clouds)
+	overcastShadesUndead = true
+	#Client: hailstones and their clatter (weather/client/HailClient)
+	hailVisuals = true
+	#Humidity (weather/Humidity): rust and patina build in damp air, food keeps by it, drying racks, pans and puddles dry by it, dry heat makes you thirstier and damp heat or cold feels worse
+	humidityEffects = true
+	#Client: with Iris, patch Complementary-family shader packs (Reimagined, Unbound, Euphoria Patches) as they load so they show our weather and moon: eclipses, the moon's light and colour, wind on plants, our fog, drought, clouds (compat/iris/PackPatches; reload the pack after changing)
+	shaderPackPatches = true
+
+	#Client, shader packs: how storms are built into a patched pack's clouds (compat/iris/ShaderStorms, PackPatches). Read live, so they can be tuned without a restart
+	[weather.shaderStorms]
+		#How much cloud a storm adds: 1 = a thick deck under rain, a thinner one out to its cloud shield
+		# Default: 1.0
+		# Range: 0.0 ~ 3.0
+		cloudCover = 1.0
+		#How tall storm clouds heap up over the rain, as a multiple of each kind's height (showers about 40 blocks, storms about 130)
+		# Default: 1.0
+		# Range: 0.0 ~ 3.0
+		towerHeight = 1.0
+		#How dark the cloud over heavy rain is drawn, 0 none, 1 black
+		# Default: 0.75
+		# Range: 0.0 ~ 1.0
+		cloudDarkness = 0.75
+		#How solid the rain shafts seen from afar are, 0 none
+		# Default: 0.6
+		# Range: 0.0 ~ 1.0
+		shaftOpacity = 0.6
+		#Rain shafts fade in from this far off, blocks (further while it rains on you)
+		# Default: 24.0
+		# Range: 0.0 ~ 512.0
+		shaftNear = 24.0
+		#...and are full from this far off, blocks
+		# Default: 80.0
+		# Range: 1.0 ~ 1024.0
+		shaftFar = 80.0
+		#Reimagined: how far dark storm cloud keeps its colour at a distance instead of fading into the sky like the pack's other clouds (0 = fades like them, 1 = never fades)
+		# Default: 0.8
+		# Range: 0.0 ~ 1.0
+		cloudHaze = 0.8
+		#Reimagined: the share of the sky's cells that are cloud on a clear day. The pack paints 24 % whatever the weather; 0.05 leaves a few puffs, 0.24 or more leaves its sky as it is. Cloud systems, overcast and storms add their own cells on top
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		fairWeatherClouds = 0.05
+		#Reimagined: fair-weather clouds float at varied heights, up to this many blocks above the pack's layer (192), in steps of one cloud height (8.4). 64 spreads them over 192-256; 0 keeps the pack's single flat layer. Costs a few more samples per cloud pixel
+		# Default: 64.0
+		# Range: 0.0 ~ 128.0
+		cloudHeightVariance = 64.0
+		#Shader packs: spread a flat anvil sheet at the top of a storm's or super front's towers. Off for now: it floated apart from the towers below it
+		stormAnvils = false
+		#Reimagined, for finding faults: 1 tints each cloud by what made it (white the pack's own layer, green a floating fair-weather cell, red a storm's deck, orange a storm tower); 2 as 1, and paints a spot straight overhead: magenta if the pack is given no storms, else its red is the rain over you and its green our cloud over you. 3 as 1 with no cloud undersides at all (for telling whether the blur under a cover comes from them). 0 off. Read live
+		# Default: 0
+		# Range: 0 ~ 3
+		debugView = 0
+
+#The moon (docs/Moon.md): its phases and events, all on by default
+[moon]
+	#Nights are as bright as the moon: sky light 2 at a new moon to 6 at a full one (vanilla: 4 every night), clouds hiding it; hostile mobs spawn on the surface by it
+	phaseLight = true
+	#The harvest moon, the full moon nearest mid-autumn: bright and amber, villagers work late, crops ripen faster and give more (seasons on only)
+	harvestMoon = true
+	#One full moon in eight is a supermoon, drawn larger
+	supermoons = true
+	#Eclipses of the moon: it dims and turns red round midnight
+	lunarEclipses = true
+	#Blood moons: a red full moon, and hostile mobs spawn on the surface as on the darkest night
+	bloodMoons = true
+	#Eclipses of the sun: the moon's shadow crosses the map along a path; on it the sun goes out for a few minutes
+	solarEclipses = true

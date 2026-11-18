@@ -1,0 +1,13 @@
+name = "DeepDelve Playtest"
+author = "Hunter"
+version = "0.2.6"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "dc4a66f5b917a72f21effb2bbe8c72e93f3879ecce30f9100c2cb75c04c921bb"
+
+[versions]
+minecraft = "26.2"
+neoforge = "26.2.0.86"

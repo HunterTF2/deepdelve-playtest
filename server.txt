@@ -1,0 +1,5 @@
+# The playtest server, put in every tester's server list (servers.dat, holding only this one).
+# The repo is public, so anyone can read this address: keep the server whitelisted
+# (white-list=true in server.properties, then /whitelist add <name>). Uncomment and fill in:
+name = DeepDelve Playtest
+address = huntershosting.duckdns.org

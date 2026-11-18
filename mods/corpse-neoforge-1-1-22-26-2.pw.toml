@@ -1,0 +1,13 @@
+name = "Corpse"
+filename = "corpse-neoforge-1.1.22+26.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/WrpuIfhw/versions/sHJAVp44/corpse-neoforge-1.1.22%2B26.2.jar"
+hash-format = "sha512"
+hash = "61dcd80791154e2e00c60a0f5a8ec383819a7a54ba207f4a285b3e1123c926b9a0daf9cdb76a84f1933f1a188c1c3da37a3ac1a76012138cc3273fe7d4993852"
+
+[update]
+[update.modrinth]
+mod-id = "WrpuIfhw"
+version = "sHJAVp44"

@@ -1,0 +1,21 @@
+# Your mods the server doesn't get (the pack marks them side = "client"): one a line, as
+# project:<Modrinth project id> (any version) or file:<jar name> (* and ? allowed). Everything else
+# goes to both. Written the first time from what the server had; yours to edit.
+file:cwb-*.jar  # client-side only
+project:xv94TkTM  # Controlling
+project:4H6sumDB  # Euphoria Patches
+project:5ZwdcRci  # ImmediatelyFast
+project:bkAgg84v  # Iris & Oculus Search
+project:1vrSzlao  # KotlinLangForge
+project:aC3cM3Vq  # Mouse Tweaks
+project:fuuu3xnx  # Searchables
+project:9s6osm5g  # Cloth Config API
+file:configured-neoforge-26.2-2.7.5-patched.jar
+project:NNAgCjsB  # Entity Culling
+project:p19vrgc2  # Fusion (Connected Textures)
+project:YL57xq9U  # Iris Shaders
+project:S8drsznD  # More Mouse Tweaks
+project:zV5r3pPn  # 3D Skin Layers
+project:AANobbMI  # Sodium
+project:1eAoo2KR  # YetAnotherConfigLib (YACL)
+project:w7ThoJFB  # Zoomify (Zoom)

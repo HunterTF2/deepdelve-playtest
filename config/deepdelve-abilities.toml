@@ -1,0 +1,316 @@
+#Sword parry (combat/WeaponAbilities)
+[parry]
+	#Ticks the raised blade turns a blow aside for
+	# Default: 6
+	# Range: 1 ~ 40
+	window = 6
+	#Ticks before the next parry
+	# Default: 40
+	# Range: 0 ~ 1200
+	cooldown = 40
+	#Ticks after a parry in which the next hit ripostes
+	# Default: 20
+	# Range: 0 ~ 200
+	riposteWindow = 20
+	#The riposte, as a multiple of the hit
+	# Default: 2.0
+	# Range: 1.0 ~ 10.0
+	riposteDamage = 2.0
+	#Ticks a parry that caught nothing leaves you open for
+	# Default: 10
+	# Range: 0 ~ 200
+	exposedWindow = 10
+	#Hits taken while open, as a multiple
+	# Default: 1.5
+	# Range: 1.0 ~ 10.0
+	exposedDamage = 1.5
+	#How far a parried attacker is pushed back
+	# Default: 0.4000000059604645
+	# Range: 0.0 ~ 5.0
+	pushBack = 0.4000000059604645
+	#Exhaustion per parry
+	# Default: 0.10000000149011612
+	# Range: 0.0 ~ 20.0
+	hunger = 0.10000000149011612
+	#Durability lost when a parry catches a blow
+	# Default: 1
+	# Range: 0 ~ 100
+	wear = 1
+
+#Knife backstab (combat/WeaponAbilities)
+[backstab]
+	#The target must be within this many blocks
+	# Default: 1.5
+	# Range: 0.5 ~ 10.0
+	pointBlank = 1.5
+	#As a multiple of the hit
+	# Default: 3.0
+	# Range: 1.0 ~ 20.0
+	damage = 3.0
+	#When the target had not noticed you
+	# Default: 4.0
+	# Range: 1.0 ~ 20.0
+	unawareDamage = 4.0
+	#Against a player, in all (the from-behind bonus included; armour counts)
+	# Default: 2.0
+	# Range: 1.0 ~ 20.0
+	playerDamage = 2.0
+	#Ticks before the next backstab
+	# Default: 20
+	# Range: 0 ~ 1200
+	cooldown = 20
+	#Exhaustion per backstab
+	# Default: 0.20000000298023224
+	# Range: 0.0 ~ 20.0
+	hunger = 0.20000000298023224
+	#Durability lost per backstab
+	# Default: 1
+	# Range: 0 ~ 100
+	wear = 1
+
+#Hammer slam (combat/WeaponAbilities)
+[slam]
+	#Ticks to charge before it can be let go
+	# Default: 10
+	# Range: 1 ~ 200
+	charge = 10
+	#Blocks round you it reaches
+	# Default: 3.0
+	# Range: 0.5 ~ 16.0
+	radius = 3.0
+	#As a share of the hammer's damage
+	# Default: 0.5
+	# Range: 0.0 ~ 10.0
+	damageShare = 0.5
+	#How far it throws them
+	# Default: 0.6000000238418579
+	# Range: 0.0 ~ 5.0
+	knockback = 0.6000000238418579
+	#Stacks of Dented it adds
+	# Default: 1
+	# Range: 0 ~ 10
+	dents = 1
+	#Ticks before the next slam
+	# Default: 60
+	# Range: 0 ~ 1200
+	cooldown = 60
+	#Exhaustion per slam
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	hunger = 1.0
+	#Durability lost per slam
+	# Default: 2
+	# Range: 0 ~ 100
+	wear = 2
+
+#Flanged mace falling slam (combat/HeavyWeapons)
+[fallingSlam]
+	#Blocks you must have fallen before you can dive
+	# Default: 5.0
+	# Range: 0.0 ~ 64.0
+	minFall = 5.0
+	#The share of the fall damage you take
+	# Default: 0.75
+	# Range: 0.0 ~ 2.0
+	fallDamageTaken = 0.75
+	#Blocks round where you land it reaches
+	# Default: 3.0
+	# Range: 0.5 ~ 16.0
+	radius = 3.0
+	#The damage grows by a tenth per block fallen, up to this multiple
+	# Default: 3.0
+	# Range: 1.0 ~ 20.0
+	maxScale = 3.0
+	#Ticks of Slowness II on everything struck
+	# Default: 200
+	# Range: 0 ~ 1200
+	slownessTicks = 200
+	#Ticks of Stunned on everything struck
+	# Default: 40
+	# Range: 0 ~ 1200
+	stunTicks = 40
+	#How far it throws them
+	# Default: 0.699999988079071
+	# Range: 0.0 ~ 5.0
+	knockback = 0.699999988079071
+	#Ticks before the next dive
+	# Default: 100
+	# Range: 0 ~ 1200
+	cooldown = 100
+	#Exhaustion per slam
+	# Default: 1.5
+	# Range: 0.0 ~ 20.0
+	hunger = 1.5
+	#Durability lost per slam
+	# Default: 3
+	# Range: 0 ~ 100
+	wear = 3
+
+#A chestplate's pauldrons (combat/Pauldrons)
+[pauldrons]
+	#How much of the from-behind bonus a fully blunt hit loses on a shoulder in plate (0 none, 1 all of it)
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	behindBluntSoften = 0.5
+
+#War pick brutalize (combat/HeavyWeapons)
+[brutalize]
+	#Ticks to charge before it can be let go
+	# Default: 15
+	# Range: 1 ~ 200
+	charge = 15
+	#How far the target is hurled
+	# Default: 2.0
+	# Range: 0.0 ~ 10.0
+	knockback = 2.0
+	#Ticks of Confused on the target
+	# Default: 40
+	# Range: 0 ~ 1200
+	confuseTicks = 40
+	#What whatever it is hurled into takes, as a share of the true damage
+	# Default: 0.5
+	# Range: 0.0 ~ 5.0
+	chainShare = 0.5
+	#Ticks before the next
+	# Default: 80
+	# Range: 0 ~ 1200
+	cooldown = 80
+	#Ticks before the next after a swing at nothing
+	# Default: 20
+	# Range: 0 ~ 1200
+	missCooldown = 20
+	#Exhaustion per strike
+	# Default: 0.800000011920929
+	# Range: 0.0 ~ 20.0
+	hunger = 0.800000011920929
+	#Durability lost per strike
+	# Default: 2
+	# Range: 0 ~ 100
+	wear = 2
+
+#Halberd pull (combat/HeavyWeapons)
+[pull]
+	#The target must be within this many blocks of your full reach
+	# Default: 1.25
+	# Range: 0.0 ~ 10.0
+	fromTip = 1.25
+	#How far it is yanked toward you
+	# Default: 0.75
+	# Range: 0.0 ~ 5.0
+	step = 0.75
+	#Ticks of Stunned on the target
+	# Default: 60
+	# Range: 0 ~ 1200
+	stunTicks = 60
+	#Stacks of Dented it adds
+	# Default: 3
+	# Range: 0 ~ 10
+	dents = 3
+	#Ticks before the next pull
+	# Default: 100
+	# Range: 0 ~ 1200
+	cooldown = 100
+	#Exhaustion per pull
+	# Default: 0.6000000238418579
+	# Range: 0.0 ~ 20.0
+	hunger = 0.6000000238418579
+	#Durability lost per pull
+	# Default: 2
+	# Range: 0 ~ 100
+	wear = 2
+
+#Rapier lunge (combat/HeavyWeapons)
+[lunge]
+	#How hard the dash pushes you forward
+	# Default: 1.149999976158142
+	# Range: 0.0 ~ 5.0
+	dash = 1.149999976158142
+	#Ticks after the dash in which the first thing in reach is thrust at
+	# Default: 8
+	# Range: 1 ~ 200
+	window = 8
+	#The thrust, as a multiple of the hit
+	# Default: 1.5
+	# Range: 0.0 ~ 20.0
+	damage = 1.5
+	#Ticks before the next lunge
+	# Default: 60
+	# Range: 0 ~ 1200
+	cooldown = 60
+	#Exhaustion per lunge
+	# Default: 0.6000000238418579
+	# Range: 0.0 ~ 20.0
+	hunger = 0.6000000238418579
+	#Durability lost when the thrust lands
+	# Default: 1
+	# Range: 0 ~ 100
+	wear = 1
+
+#Axe decapitating strike (combat/HeavyWeapons)
+[decapitatingStrike]
+	#Ticks to charge before it can be let go
+	# Default: 10
+	# Range: 1 ~ 200
+	charge = 10
+	#As a multiple of the hit
+	# Default: 2.0
+	# Range: 0.0 ~ 20.0
+	damage = 2.0
+	#Ticks of Bleeding III
+	# Default: 600
+	# Range: 0 ~ 12000
+	bleedTicks = 600
+	#Chance a kill drops the head
+	# Default: 0.10000000149011612
+	# Range: 0.0 ~ 1.0
+	headChance = 0.10000000149011612
+	#Ticks before the next
+	# Default: 80
+	# Range: 0 ~ 1200
+	cooldown = 80
+	#Ticks before the next after a swing at nothing
+	# Default: 20
+	# Range: 0 ~ 1200
+	missCooldown = 20
+	#Exhaustion per strike
+	# Default: 0.800000011920929
+	# Range: 0.0 ~ 20.0
+	hunger = 0.800000011920929
+	#Durability lost per strike
+	# Default: 2
+	# Range: 0 ~ 100
+	wear = 2
+
+#Greatsword wide sweep (combat/HeavyWeapons)
+[wideSweep]
+	#Ticks to charge before it can be let go
+	# Default: 15
+	# Range: 1 ~ 200
+	charge = 15
+	#How far round each side it cuts
+	# Default: 90.0
+	# Range: 10.0 ~ 180.0
+	degrees = 90.0
+	#How far it throws them
+	# Default: 0.5
+	# Range: 0.0 ~ 5.0
+	knockback = 0.5
+	#Ticks before the next
+	# Default: 80
+	# Range: 0 ~ 1200
+	cooldown = 80
+	#Exhaustion per sweep
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	hunger = 1.0
+	#Durability lost: one per thing struck, up to this
+	# Default: 3
+	# Range: 1 ~ 100
+	maxWear = 3
+
+#A helmet's visor (combat/Visors)
+[visor]
+	#How much less damage a projectile hit to the head from the front does to a wearer with a visor (0 none, 1 all of it)
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	frontHeadProjectileSoften = 0.3

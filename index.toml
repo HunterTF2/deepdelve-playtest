@@ -1,0 +1,383 @@
+hash-format = "sha256"
+
+[[files]]
+file = "config/ali/ali_common.json"
+hash = "003fdfbc4de5aa4163bb412fae5b7773eb5b9d7fe64d97016c9bf1ef8288f46f"
+
+[[files]]
+file = "config/chunky/config.json"
+hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
+
+[[files]]
+file = "config/corpse-server.toml"
+hash = "806dc2002f95b1bcd16dec843051abc513576a1986ea1931d8c2cc82aef201c7"
+
+[[files]]
+file = "config/corpsecurioscompat-common.toml"
+hash = "39cfb039db271a4a40f61cd1e295d53df2b56871cccf5e1cc8218db3811108fc"
+
+[[files]]
+file = "config/create-adapted-external-assets.toml"
+hash = "bde9f284257c00de9258f1b0e1235e64ebadfe1f2a871dc535348a79fcaf2783"
+
+[[files]]
+file = "config/create-adapted/external-assets/create-1-21-1-6-0-10.pw.toml"
+hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
+metafile = true
+
+[[files]]
+file = "config/create-common.toml"
+hash = "2e77b1d93b40ce3f381ad7eb2a9e6d7148de917518be5c2616939a4369c4b140"
+
+[[files]]
+file = "config/create-server.toml"
+hash = "36216a05f3ed63106ba587c8c24ed6315385829e7f3dae695dcf545aba41a270"
+
+[[files]]
+file = "config/creativecore.json"
+hash = "5f08d0878d7f89c6b4c947a49dce368d7738255d44fecf9aad59ec6ae8a4fcef"
+
+[[files]]
+file = "config/curios-common.toml"
+hash = "9f00a6b9904cf63a36c0c72f8346642962d538aaa78b59943b9de60dda82e6d0"
+
+[[files]]
+file = "config/curios-server.toml"
+hash = "1a3bee95a96f082b8e97cccbce30c1efe1352b616c78e06d5884fd4475668add"
+
+[[files]]
+file = "config/deepdelve-abilities.toml"
+hash = "1ceb87a058ebb4e28ef59a9df5650ffb1e5f9f577d23ecdf09fbca1c5f706d0a"
+
+[[files]]
+file = "config/deepdelve-common.toml"
+hash = "fbb9ac8b19d5a5ce96ca8bcdf6985fb0299bd5a914c1e37d43d78966bae28a73"
+
+[[files]]
+file = "config/deepdelve-startup.toml"
+hash = "c6e3e3286660a76ae3b3ce4b9193e4ee9362195cfc8dd13f0073eb45aea47dc8"
+
+[[files]]
+file = "config/deepdelve/abyss_ores.json"
+hash = "40c34eb3ba898032c9bec466eb0d34a710f9db7a2d8a66be2e3dd0d4e0e92e09"
+
+[[files]]
+file = "config/euphoria_patcher/settings.toml"
+hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
+
+[[files]]
+file = "config/ferritecore-mixin.toml"
+hash = "f5659957a2583f18c9c45c2053e3c3c84022499555c30ed54fa4d36e7bca3ad5"
+
+[[files]]
+file = "config/fml.toml"
+hash = "e0d3edd400c6398af417aee04d0e902eb561f0b5dd864b8eddb483490513f98d"
+
+[[files]]
+file = "config/inventoryessentials-common.toml"
+hash = "2617722a68540f9109d24e9974d582be722e2d54846eddb2a2f66be6a06ed4b3"
+
+[[files]]
+file = "config/iris-excluded.json"
+hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
+
+[[files]]
+file = "config/itemphysic.json"
+hash = "2c236a8c45858c35b975b2d7f97936960bc8e1305637fc2676a7d32e590566df"
+
+[[files]]
+file = "config/jei-server.toml"
+hash = "702acd04d99445bce659d04fcc488e1a98c8a803983c31ae262b0f3a47fdc8d3"
+
+[[files]]
+file = "config/jei/blacklist.json"
+hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
+
+[[files]]
+file = "config/jeresources-common.toml"
+hash = "b8e340097e9b479a5d66593f01c1c84a8a8fdc1ed960eccb11676ee7612537e2"
+
+[[files]]
+file = "config/justenoughbreeding-offsets.json"
+hash = "8529026235c5f7d28eac454a48db96c25db669b41fa8873968e3353ec3aecee7"
+
+[[files]]
+file = "config/justenoughbreeding.json"
+hash = "3b3519f38d850e4eb869d00d75b5e4dc664950959564aaf90c7ab7ccc6448a3c"
+
+[[files]]
+file = "config/latent_enchantments-server.toml"
+hash = "fa0ba49932256d8c7441a5fefcde1a55ab2a5091ed3859914753e27789cc58bb"
+
+[[files]]
+file = "config/lithium.properties"
+hash = "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be"
+
+[[files]]
+file = "config/lithostitched.json"
+hash = "43e35f01fceb40ba4689584c447ae842edf22fe86131f30f5108aae55b1b5ca6"
+
+[[files]]
+file = "config/neoforge-common.toml"
+hash = "caa885bd719c4fec0314b1da87c2a82b7ad18fb96a490a3e58338c6b499617b9"
+
+[[files]]
+file = "config/neoforge-server.toml"
+hash = "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f"
+
+[[files]]
+file = "config/sodium-mixins.properties"
+hash = "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
+
+[[files]]
+file = "config/terralith.json"
+hash = "8b2a64443aa57dd83331d650b603b420b873aead11dc69bcff44c5a539c128f1"
+
+[[files]]
+file = "mods/advancedcoreinfo-neoforge-26-2-1-5-0.pw.toml"
+hash = "72744070e054ed67a5e62f4e1d164306519d5a72023c2b4892225695839391e8"
+metafile = true
+
+[[files]]
+file = "mods/advancedlootinfo-neoforge-26-2-2-5-0.pw.toml"
+hash = "2bde8c167b3f8a47ddc833992c75775ffe2ed2816cf524f60775f64ccdd53c92"
+metafile = true
+
+[[files]]
+file = "mods/baguettelib-26-2-neoforge-2-0-7.pw.toml"
+hash = "256dd359265784979c261e7817f8cbe592d70cbdb0b2d1457efb1c56a528bffc"
+metafile = true
+
+[[files]]
+file = "mods/balm-neoforge-26-2-26-2-0-9.pw.toml"
+hash = "01cd64a00e55dc4aa82c71ad45b4aaba4cbec16f0dfdfb21fd705ba60da5dd99"
+metafile = true
+
+[[files]]
+file = "mods/chunky-neoforge-1-5-4.pw.toml"
+hash = "f2420bfbb87f2aab135fc2cb100521ae7f69e8794f2059878fb652a5b1f1c84e"
+metafile = true
+
+[[files]]
+file = "mods/chunky-offline-v1-1-0.pw.toml"
+hash = "986f28c111e5ecf1a77054203ddcc6642d269561827cab3968c811672a7ce53c"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config-26-2-155.pw.toml"
+hash = "3d2d3255f0e9baea385c0ddb95edbc961dce1a414ca65cf5716687e0efa259eb"
+metafile = true
+
+[[files]]
+file = "mods/configured-neoforge-26-2-2-7-5-patched.pw.toml"
+hash = "7add9fd67cf278ed57684c2639c7b32edb625661c1eb5806b720a8353edde53f"
+metafile = true
+
+[[files]]
+file = "mods/controlling-neoforge-26-2-26-2-4.pw.toml"
+hash = "849dfdcecabd2a1cc064a5ec281a2bb09b0fda1e8598dee2e7e65827aeaa80cf"
+metafile = true
+
+[[files]]
+file = "mods/corpse-neoforge-1-1-22-26-2.pw.toml"
+hash = "3f026592bf1b53390ff1bdfe89c27a72bea1bd562655063b47c421338050f6c3"
+metafile = true
+
+[[files]]
+file = "mods/corpsecurioscompat-26-2-neoforge-4-2-0.pw.toml"
+hash = "c2834c9a4b1ec7da4e65d15fc8d11b346d0f50e5f5bf20136b3a3a2f9b3d58fa"
+metafile = true
+
+[[files]]
+file = "mods/create-adapted-26-2-1-31-public-external-assets.pw.toml"
+hash = "c108d95e5b49acf2592e1de540ba584c63124153e9a3f0dcacb00abebe194c6e"
+metafile = true
+
+[[files]]
+file = "mods/creativecore-neoforge-v2-14-16-mc26-2.pw.toml"
+hash = "0674346c4afee26295c844cd0101795c44948afcb67b2bacdc77ea6b0b6a5c59"
+metafile = true
+
+[[files]]
+file = "mods/curios-neoforge-16-0-0-26-2.pw.toml"
+hash = "c6c4602d97efc24e21e11122170ea3f168cf2636913a2183e24edcb40786fd63"
+metafile = true
+
+[[files]]
+file = "mods/cwb-5-0-0-26-2.pw.toml"
+hash = "43872fba868a090c18042a7063bf075e5b238f8b9c37d969ef2854605de4e0dd"
+metafile = true
+
+[[files]]
+file = "mods/enchantmentdescriptions-neoforge-mc26-2-26-2-0-2.pw.toml"
+hash = "a974842d87294177ef406dcb562b91658f10a2bb53cc74db461e65805d97e145"
+metafile = true
+
+[[files]]
+file = "mods/entityculling-neoforge-1-11-2-mc26-2.pw.toml"
+hash = "d717f211778683a1e3c98deab45c7061d124812569a8f21328fbe56172f0d96f"
+metafile = true
+
+[[files]]
+file = "mods/euphoriapatcher-1-10-5-r5-9-3-neoforge.pw.toml"
+hash = "a245469cf91e7f3c8aec3b0f5ad3d79b1846ac0696543f892b426faea5f91cab"
+metafile = true
+
+[[files]]
+file = "mods/ferritecore-9-0-0-neoforge.pw.toml"
+hash = "ecd9e70faca5584f8cb488905c333f9eeef03193674f03692a7bb32f1283fcdc"
+metafile = true
+
+[[files]]
+file = "mods/fusion-1-3-15b-neoforge-mc26-2.pw.toml"
+hash = "08666d5f694b6c5e0c59cfd787a6af647e09095d2a52d4dfd46f6f62848f3102"
+metafile = true
+
+[[files]]
+file = "mods/geckolib-neoforge-26-2-5-5-5.pw.toml"
+hash = "8ad89d647f4f4882ed87a67f77ffefda01ecdfbb102235e78fe0f59ad20ef8e2"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast-neoforge-1-16-5-26-2.pw.toml"
+hash = "7b7e53d7f8ae3974d88c90ca97f1ffcc742e78f947afd46345748b0c3a311e2e"
+metafile = true
+
+[[files]]
+file = "mods/inventoryessentials-neoforge-26-2-26-2-0-6.pw.toml"
+hash = "e5c7aa9d5cea99693d3b6c6059f90fbf1fa7614567c919e7042aaf1384ee179d"
+metafile = true
+
+[[files]]
+file = "mods/iris-neoforge-1-11-2-mc26-2.pw.toml"
+hash = "540557010196bee46d93ec915d9761d4355ead20688b9c681bfb9e9a0ba8d4c7"
+metafile = true
+
+[[files]]
+file = "mods/irissearch-1-8-3-neoforge.pw.toml"
+hash = "aa393a30005c65c5a95189fcff10761d2726de97e9ef42395664ea59bc51dca0"
+metafile = true
+
+[[files]]
+file = "mods/itemphysic-neoforge-v1-8-15-mc26-2.pw.toml"
+hash = "4f14a2585f6a3671f9685b4dcbce2359040235ba05afaeaa14f9fab55ec08460"
+metafile = true
+
+[[files]]
+file = "mods/jei-26-2-neoforge-30-42-0-236.pw.toml"
+hash = "1a43f184cfae1dfca3c768babc1cb673a75049762c0cd6eb030629cff9471485"
+metafile = true
+
+[[files]]
+file = "mods/jeiworldgen-neoforge-26-2-1-4-5.pw.toml"
+hash = "476a9460028b4bef183b5b1fad32ed6ea95068122924272ee68303ae7b72fbf9"
+metafile = true
+
+[[files]]
+file = "mods/justenoughbreeding-neoforge-26-2-3-4-1.pw.toml"
+hash = "d979fa8051a0135dab67b1388861e876a614cb38ae7f1a0d912841bf84fba7f3"
+metafile = true
+
+[[files]]
+file = "mods/justenoughprofessions-neoforge-26-2-12-0-0.pw.toml"
+hash = "aaea097848c7f78bf7b9914c40383b33e911c45573be08356ca622d76e4b7b49"
+metafile = true
+
+[[files]]
+file = "mods/justenoughresources-neoforge-26-2-1-11-0-44.pw.toml"
+hash = "bc0c666bb9c89cca444277c77af33693903e1b7b867a260587d184b8aa218ae2"
+metafile = true
+
+[[files]]
+file = "mods/kotlinlangforge-2-15-0-k2-4-21-3-1-neoforge.pw.toml"
+hash = "7b468eed8a90bc296a9b93636d97a11acda1318df4537fa8089ca30bb8bcc675"
+metafile = true
+
+[[files]]
+file = "mods/lambdynamiclights-4-12-4-26-2.pw.toml"
+hash = "95745ee06bd85d5c71a8554979c16083c8ff01a4e8482c830be669bf94f63b76"
+metafile = true
+
+[[files]]
+file = "mods/latent-enchantments-0-2-2.pw.toml"
+hash = "422d75a0c5c95b49e87e3cd38828350a226527d18df928ae3621a5a5bf3b0584"
+metafile = true
+
+[[files]]
+file = "mods/lithium-neoforge-0-25-3-mc26-2.pw.toml"
+hash = "6c26b17b40a3d91c5a3043c987aa753faa2d3d13b6c20d319cbb9e04b59169cf"
+metafile = true
+
+[[files]]
+file = "mods/lithostitched-1-8-0-neoforge-26-2.pw.toml"
+hash = "299a28323b891c6151013e661f3248df5bf827fa3dc36076c46839b924093233"
+metafile = true
+
+[[files]]
+file = "mods/mezz-config-26-2-neoforge-0-6-8-standalone.pw.toml"
+hash = "94e0a64ef0a3c132f551f4db87917147a7e105bbb75b812fc1abb301760edb3a"
+metafile = true
+
+[[files]]
+file = "mods/modonomicon-26-2-neoforge-2-5-0.pw.toml"
+hash = "6453f2a2a9ed564161629b9c8bd688585cea4d963b36b01b7ed2a4a994feb4d3"
+metafile = true
+
+[[files]]
+file = "mods/moremousetweaks-neoforge-2-103-0-26-2.pw.toml"
+hash = "db286a9811b6337fe94ecb32457ffdc2211ba5c98254051f4dc926d859d9e1bc"
+metafile = true
+
+[[files]]
+file = "mods/mousetweaks-neoforge-mc26-2-2-31.pw.toml"
+hash = "b8cce3c754ae0e1f100d2844e9bb53fba5667686cceba36b2d5aced3d5f87848"
+metafile = true
+
+[[files]]
+file = "mods/pricklemc-neoforge-mc26-2-26-2-0-3.pw.toml"
+hash = "8d37977c07217ac87de5a2e60a34523917deef23b365ceac33ec5a759e43e7b3"
+metafile = true
+
+[[files]]
+file = "mods/searchables-neoforge-26-2-1-0-1.pw.toml"
+hash = "75a110a51b4d20571338b3b079888967236f99a745621a34cb97bf52770cfb66"
+metafile = true
+
+[[files]]
+file = "mods/skinlayers3d-neoforge-1-11-3-mc26-2.pw.toml"
+hash = "dd0995bccdc4356471641d855044f9c30f35f66b108774d61d274878cc96eb65"
+metafile = true
+
+[[files]]
+file = "mods/sodium-neoforge-0-9-1-mc26-2.pw.toml"
+hash = "6dce38e217c6b652012182ecb9ff0ace868363e189e8c091ee220e86aa981ee8"
+metafile = true
+
+[[files]]
+file = "mods/terralith-26-2-v2-6-4.pw.toml"
+hash = "23948eef03441bf2ca605569a4a21f165460cdf8865da12463492af6d871e62b"
+metafile = true
+
+[[files]]
+file = "mods/yet-another-config-lib-v3-3-9-7-26-2-neoforge.pw.toml"
+hash = "e7a80f49fbc428c1149c0a7ca60e0942d94e30f08c412075bf60bc2462a63b41"
+metafile = true
+
+[[files]]
+file = "mods/zoomify-2-17-0-mc26-2-universal.pw.toml"
+hash = "7d8879b881c258af78e6251d7458315fd3ff8e4eb94826ba22a94d6e420dfb8f"
+metafile = true
+
+[[files]]
+file = "servers.dat"
+hash = "2d6f605c38eb2d541edf8924887a190c45c45430f3ab4d2d0772ef7eafedc4db"
+
+[[files]]
+file = "shaderpacks/complementaryreimagined-r5-9-3.pw.toml"
+hash = "75d1d2488a0c332a9a58af7e57f980a1b006c02b3a1c580fbd50443088e4eab0"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementaryunbound-r5-9-3.pw.toml"
+hash = "1a3d3663c44dc21e227c39c42ea9b5e3c4f3b2e3b5272ed55b45da9e247a46d7"
+metafile = true

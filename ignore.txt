@@ -1,0 +1,3 @@
+# Extra patterns to leave out of the pack, one a line, relative to the instance's minecraft folder
+# (shell-style: * and ?). The script already leaves out caches, .bak files, JEI's per-world
+# history and the other per-machine files in its EXCLUDE list.
