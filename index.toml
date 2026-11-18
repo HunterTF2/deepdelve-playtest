@@ -46,6 +46,11 @@ file = "config/curios-server.toml"
 hash = "1a3bee95a96f082b8e97cccbce30c1efe1352b616c78e06d5884fd4475668add"
 
 [[files]]
+file = "config/cwb.json"
+hash = "346c8fd218a2b0b66574fd2ef8108f19712059b67e29f955290d11361b206907"
+preserve = true
+
+[[files]]
 file = "config/deepdelve-abilities.toml"
 hash = "1ceb87a058ebb4e28ef59a9df5650ffb1e5f9f577d23ecdf09fbca1c5f706d0a"
 
@@ -210,7 +215,7 @@ metafile = true
 
 [[files]]
 file = "mods/deepdelve.pw.toml"
-hash = "be04496116160d06f6bd30a37e02b0ff1d26148d6a713dcdea50cd701393ce26"
+hash = "473ef2a8afe3f8e54deac6d60f715eb628b49065752897eee632975cbac76a32"
 metafile = true
 
 [[files]]
@@ -376,6 +381,16 @@ metafile = true
 [[files]]
 file = "servers.dat"
 hash = "2d6f605c38eb2d541edf8924887a190c45c45430f3ab4d2d0772ef7eafedc4db"
+
+[[files]]
+file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
+hash = "0c39b5b38db33534a266e146e56dc13b15b40053ae759d566c78eba5d6f1fc2b"
+preserve = true
+
+[[files]]
+file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5.txt"
+hash = "0c39b5b38db33534a266e146e56dc13b15b40053ae759d566c78eba5d6f1fc2b"
+preserve = true
 
 [[files]]
 file = "shaderpacks/complementaryreimagined-r5-9-3.pw.toml"

@@ -1,0 +1,32 @@
+# DeepDelve's settings for Complementary + Euphoria Patches (see README.md beside this file).
+# Iris reads this file when it sits next to the pack in .minecraft/shaderpacks with the
+# pack's exact name; it rewrites it (dropping these comments) if the player changes a setting.
+AAA_THIS_IS_A_EUPHORIA_PATCHES_SETTINGS_FILE=true
+AAB_FOR_EUPHORIA_PATCHES_VERSION_1_10_5=true
+# Off: under Iris 1.11 on 26.2 it makes tinted particles (smoke, ash, dust, gas) glow on and off
+# at random. Fire, lava, redstone, ender and crying obsidian particles still glow (the pack's IPBR).
+GLOWING_COLORED_PARTICLES=false
+LIGHT_COLOR_MULTS=true
+# Light level 0 pitch black, as the mod draws it without shaders: no minimum (cave) light,
+# and black cave fog so distance doesn't lift the dark to grey. Night vision still works.
+CAVE_LIGHTING=0
+CAVE_FOG_R_NEW=0.00
+CAVE_FOG_G_NEW=0.00
+CAVE_FOG_B_NEW=0.00
+# Euphoria's seasons (snow in winter, autumn leaves, spring flowers), following DeepDelve's calendar.
+SEASONS=1
+# Performance - High (the default): Complementary's HIGH profile (the pack's own defaults), plus coloured lighting at 128 so our coloured lights (gems, crystals, vents) light in colour near you.
+SHADOW_QUALITY=2
+shadowDistance=192.0
+WATER_REFLECT_QUALITY=2
+BLOCK_REFLECT_QUALITY=3
+LIGHTSHAFT_QUALI_DEFINE=2
+SSAO_QUALI_DEFINE=2
+FXAA_DEFINE=1
+DETAIL_QUALITY=2
+CLOUD_QUALITY=2
+ANISOTROPIC_FILTER=0
+COLORED_LIGHTING=128
+WORLD_SPACE_REFLECTIONS=-1
+ENTITY_SHADOW=1
+RAIN_PUDDLES=0
