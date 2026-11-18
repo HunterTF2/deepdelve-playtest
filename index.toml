@@ -209,6 +209,11 @@ hash = "43872fba868a090c18042a7063bf075e5b238f8b9c37d969ef2854605de4e0dd"
 metafile = true
 
 [[files]]
+file = "mods/deepdelve.pw.toml"
+hash = "be04496116160d06f6bd30a37e02b0ff1d26148d6a713dcdea50cd701393ce26"
+metafile = true
+
+[[files]]
 file = "mods/enchantmentdescriptions-neoforge-mc26-2-26-2-0-2.pw.toml"
 hash = "a974842d87294177ef406dcb562b91658f10a2bb53cc74db461e65805d97e145"
 metafile = true
