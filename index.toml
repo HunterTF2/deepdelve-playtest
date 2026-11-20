@@ -220,7 +220,7 @@ metafile = true
 
 [[files]]
 file = "mods/deepdelve.pw.toml"
-hash = "8ecb802399483eba44493b31b0cb6f96e5cda22f750d74e6a02ff2697bceeb5e"
+hash = "6c5d30cb901594cc56f7b0a97c47711d960454328beb9e1803748ebc28b1b8d6"
 metafile = true
 
 [[files]]
