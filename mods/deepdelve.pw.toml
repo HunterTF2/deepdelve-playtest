@@ -1,8 +1,8 @@
 name = "DeepDelve"
-filename = "deepdelve-0.2.7.jar"
+filename = "deepdelve-0.2.8.jar"
 side = "both"
 
 [download]
-url = "https://github.com/HunterTF2/deepdelve-playtest/releases/download/build-0.2.7-20261118-180650/deepdelve-0.2.7.jar"
+url = "https://github.com/HunterTF2/deepdelve-playtest/releases/download/build-0.2.8-20261119-220058/deepdelve-0.2.8.jar"
 hash-format = "sha256"
-hash = "839f5075aed2cb601b8139d7c39be2e66f1612b04c5531f332a1f1a726457df8"
+hash = "874bbd97b7c55feae83413cbdcb70e5358e1ee402d3d1c8b6c56f939b2d191ac"
