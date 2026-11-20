@@ -56,7 +56,7 @@ hash = "1ceb87a058ebb4e28ef59a9df5650ffb1e5f9f577d23ecdf09fbca1c5f706d0a"
 
 [[files]]
 file = "config/deepdelve-common.toml"
-hash = "fbb9ac8b19d5a5ce96ca8bcdf6985fb0299bd5a914c1e37d43d78966bae28a73"
+hash = "6d5f540db671ad50ca70ad2eb125870dae354bc909b271ca98d99daed46cfd89"
 
 [[files]]
 file = "config/deepdelve-startup.toml"
@@ -220,7 +220,7 @@ metafile = true
 
 [[files]]
 file = "mods/deepdelve.pw.toml"
-hash = "254cafc4748747a6e38c7772e555f0d5bf374dcf16edc0354f62a4db6143c6dc"
+hash = "8ecb802399483eba44493b31b0cb6f96e5cda22f750d74e6a02ff2697bceeb5e"
 metafile = true
 
 [[files]]
