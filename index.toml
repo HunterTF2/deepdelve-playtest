@@ -220,7 +220,7 @@ metafile = true
 
 [[files]]
 file = "mods/deepdelve.pw.toml"
-hash = "6c5d30cb901594cc56f7b0a97c47711d960454328beb9e1803748ebc28b1b8d6"
+hash = "df1275c97e0b1844fb3f6fc1192d45b95228fa545de8365e8b97c7e7493bd635"
 metafile = true
 
 [[files]]
@@ -314,8 +314,8 @@ hash = "95745ee06bd85d5c71a8554979c16083c8ff01a4e8482c830be669bf94f63b76"
 metafile = true
 
 [[files]]
-file = "mods/latent-enchantments-0-2-2.pw.toml"
-hash = "422d75a0c5c95b49e87e3cd38828350a226527d18df928ae3621a5a5bf3b0584"
+file = "mods/latent-enchantments-0-2-3.pw.toml"
+hash = "8073db8879d93e34b638600c7d0df816aed588af978e80cec90d07273eb25dcf"
 metafile = true
 
 [[files]]

@@ -1,0 +1,8 @@
+name = "latent_enchantments-0.2.3"
+filename = "latent_enchantments-0.2.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/HunterTF2/deepdelve-playtest/releases/download/external/latent_enchantments-0.2.3.jar"
+hash-format = "sha256"
+hash = "27e904180a375f2bba04d5fe1eac8f223402e4fe529d4616d348681a69b08499"
