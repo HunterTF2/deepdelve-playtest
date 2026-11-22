@@ -68,7 +68,7 @@ hash = "40c34eb3ba898032c9bec466eb0d34a710f9db7a2d8a66be2e3dd0d4e0e92e09"
 
 [[files]]
 file = "config/euphoria_patcher/settings.toml"
-hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
+hash = "3d754b2d2c4a67af1ca4cc0aea863e0d2c7fb2e0991c6c63bfae9c4acf69af15"
 
 [[files]]
 file = "config/ferritecore-mixin.toml"
@@ -117,7 +117,7 @@ hash = "3b3519f38d850e4eb869d00d75b5e4dc664950959564aaf90c7ab7ccc6448a3c"
 
 [[files]]
 file = "config/latent_enchantments-server.toml"
-hash = "fa0ba49932256d8c7441a5fefcde1a55ab2a5091ed3859914753e27789cc58bb"
+hash = "8e28d6a304fac6924dc57861e6055d09d221a2e83f8a771b1a6229128e49b0a1"
 
 [[files]]
 file = "config/lithium.properties"
@@ -220,7 +220,7 @@ metafile = true
 
 [[files]]
 file = "mods/deepdelve.pw.toml"
-hash = "0692380302d4d4704a676196e793b9f7f6fc21d41f051c4c194a7eefebc5359b"
+hash = "d813033c1a615cf63c925e69bcd8a9226479a21f0f7ce0ab3c5f04730d47b0dc"
 metafile = true
 
 [[files]]
@@ -234,8 +234,8 @@ hash = "d717f211778683a1e3c98deab45c7061d124812569a8f21328fbe56172f0d96f"
 metafile = true
 
 [[files]]
-file = "mods/euphoriapatcher-1-10-5-r5-9-3-neoforge.pw.toml"
-hash = "a245469cf91e7f3c8aec3b0f5ad3d79b1846ac0696543f892b426faea5f91cab"
+file = "mods/euphoriapatcher-1-11-2-r5-10-neoforge.pw.toml"
+hash = "e0be0290332d12aa066c39ce5509bf9badc636c1b7272aee15d538bb7e90879f"
 metafile = true
 
 [[files]]

@@ -232,15 +232,12 @@
 #Costs and requirements at the infusion table: the main difficulty settings.
 #Costs are in experience levels, and each option also costs the same number of lapis unless stated.
 [difficulty]
-	#Bookshelves beyond this count add no more hint strength or cost (vanilla's enchanting table caps at 15).
-	#Every bookshelf count, even above the cap, still shuffles which enchantments are offered.
+	#Bookshelves beyond this count add no more hint strength or cost, and no more sheets of paper per infusion
+	#(vanilla's enchanting table caps at 15). Every bookshelf count, even above the cap, still shuffles which
+	#enchantments are offered.
 	# Default: 15
 	# Range: 0 ~ 64
 	bookshelfCap = 15
-	#How many sheets of plain paper one infusion turns into photographic paper.
-	# Default: 4
-	# Range: 1 ~ 64
-	sheetsPerInfusion = 4
 	#Levels (and lapis) to infuse fast paper.
 	# Default: 1
 	# Range: 0 ~ 30
@@ -255,18 +252,18 @@
 	slowPaperCost = 3
 	#Experience level the player must have to infuse each paper, on top of being able to pay.
 	#The slower the paper, the further into the game it comes. 0 = no extra requirement.
-	# Default: 5
+	# Default: 4
 	# Range: 0 ~ 100
 	fastPaperMinimumLevel = 5
-	# Default: 10
+	# Default: 8
 	# Range: 0 ~ 100
 	mediumPaperMinimumLevel = 10
-	# Default: 15
+	# Default: 12
 	# Range: 0 ~ 100
 	slowPaperMinimumLevel = 15
 	#Share (in %) of a plate's paper cost given back as experience when the plate is ground up at a grindstone.
 	#The cost counted is the least anyone could have paid: the levels just below the paper's required level,
-	#split between the sheets one infusion makes. Kept under 100% so grinding never pays.
+	#split between the most sheets one infusion can make. Kept under 100% so grinding never pays.
 	# Default: 50
 	# Range: 0 ~ 99
 	plateRefundPercent = 50
@@ -284,7 +281,16 @@
 	# Range: 0 ~ 100
 	hintMinimumLevelNoBookshelves = 0
 	#Experience level the player must have to make a hint at the bookshelf cap (full strength).
-	#The same as slow paper's by default.
 	# Default: 15
 	# Range: 0 ~ 100
 	hintMinimumLevelAtCap = 15
+	#How many sheets of plain paper one infusion turns into photographic paper with no bookshelves. It rises
+	#evenly with bookshelves to the at-cap count, for the same cost, so a table with more bookshelves makes each
+	#sheet cheaper.
+	# Default: 4
+	# Range: 1 ~ 64
+	sheetsPerInfusionNoBookshelves = 4
+	#How many sheets one infusion makes at the bookshelf cap.
+	# Default: 8
+	# Range: 1 ~ 64
+	sheetsPerInfusionAtCap = 8
