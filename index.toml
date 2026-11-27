@@ -1,6 +1,14 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/.deepdelve-abilities.toml.defaults"
+hash = "244f81318be5cab190f1f7b215e84b0e9bb574b2834583fd363ad6588ae004bb"
+
+[[files]]
+file = "config/.deepdelve-common.toml.defaults"
+hash = "9c44e6c8d1a22144dfdbe090052c20504b10a1d2f24964b294d1a5f1262a5122"
+
+[[files]]
 file = "config/ali/ali_common.json"
 hash = "003fdfbc4de5aa4163bb412fae5b7773eb5b9d7fe64d97016c9bf1ef8288f46f"
 
@@ -52,11 +60,11 @@ preserve = true
 
 [[files]]
 file = "config/deepdelve-abilities.toml"
-hash = "1ceb87a058ebb4e28ef59a9df5650ffb1e5f9f577d23ecdf09fbca1c5f706d0a"
+hash = "fca06a228a3cede52a41c84d87dadd9c53a8a9fd00b0e6904b6d56ef16342efa"
 
 [[files]]
 file = "config/deepdelve-common.toml"
-hash = "6d5f540db671ad50ca70ad2eb125870dae354bc909b271ca98d99daed46cfd89"
+hash = "7ad5fea5c8ead023c05a498de8cf196c1379584e20f4d3aa836f696d88515a89"
 
 [[files]]
 file = "config/deepdelve-startup.toml"
@@ -220,7 +228,7 @@ metafile = true
 
 [[files]]
 file = "mods/deepdelve.pw.toml"
-hash = "7b0bdfd2240c8ea29e8e1b492ea8b864fff6f1b1e6738e7ec9811f66ab76f821"
+hash = "522151959785b312d6dbe1da145f3f02a0dd26dca593969d38bd331cc116d4e3"
 metafile = true
 
 [[files]]
@@ -398,11 +406,11 @@ hash = "0c39b5b38db33534a266e146e56dc13b15b40053ae759d566c78eba5d6f1fc2b"
 preserve = true
 
 [[files]]
-file = "shaderpacks/complementaryreimagined-r5-9-3.pw.toml"
-hash = "75d1d2488a0c332a9a58af7e57f980a1b006c02b3a1c580fbd50443088e4eab0"
+file = "shaderpacks/complementaryreimagined-r5-10.pw.toml"
+hash = "5c17de8161b06a10dbd8e59645e7d7edfc583054009b5a787086d5f4fb1a77f1"
 metafile = true
 
 [[files]]
-file = "shaderpacks/complementaryunbound-r5-9-3.pw.toml"
-hash = "1a3d3663c44dc21e227c39c42ea9b5e3c4f3b2e3b5272ed55b45da9e247a46d7"
+file = "shaderpacks/complementaryunbound-r5-10.pw.toml"
+hash = "9ceebab8640099bd51b9ad88bbf2d3938772ba03a836c6f6e116ba33924541e7"
 metafile = true

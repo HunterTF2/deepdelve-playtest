@@ -383,3 +383,52 @@
 		# Default: 0
 		# Range: -2000 ~ 2000
 		yOffset = 0
+
+	#The status strip's harmful effects, above the health bar
+	[hudLayout.statusHarmful]
+		shown = true
+		# Default: 0
+		# Range: -2000 ~ 2000
+		xOffset = 0
+		# Default: 0
+		# Range: -2000 ~ 2000
+		yOffset = 0
+
+	#The status strip's helpful effects and trait entries, above the food bar
+	[hudLayout.statusHelpful]
+		shown = true
+		# Default: 0
+		# Range: -2000 ~ 2000
+		xOffset = 0
+		# Default: 0
+		# Range: -2000 ~ 2000
+		yOffset = 0
+
+#Client: the status strip above the hotbar (client/StatusStrip; docs/HUD.md). Harmful effects sit above
+#the health bar, helpful ones and the trait HUD's entries above the food bar, each with its level and a
+#draining timer. It replaces vanilla's effect icons at the top right; turned off, those come back and the
+#trait HUD goes back to its own anchor. Each half moves with hudLayout's statusHarmful and statusHelpful
+[statusStrip]
+	#Show it
+	enabled = true
+	#Icons in a row before the next row starts above it
+	# Default: 4
+	# Range: 1 ~ 12
+	perRow = 4
+
+#Client: the harmful effects on the things around you (client/SuiteMarkers; docs/Effect Suite.md)
+[effectDisplay]
+	#Show a small row of each mob's harmful effects above its head
+	mobMarkers = true
+	#How far away, in blocks, a mob's marks still show
+	# Default: 24
+	# Range: 4 ~ 64
+	mobMarkerRange = 24
+	#Show the harmful effects on whatever the crosshair is on, as a row under the crosshair
+	targetRow = true
+	#Each effect's own particles on whatever has it (assets/<ns>/suite_vfx)
+	effectParticles = true
+	#Your own effects at the edge of the screen in first person (bleeding, shock, chill, stun, terror)
+	screenCues = true
+	#Vanilla's potion swirls as well (off: each effect has its own look instead)
+	vanillaSwirls = false

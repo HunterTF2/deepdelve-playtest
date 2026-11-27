@@ -5,7 +5,7 @@
 	# Range: 1 ~ 40
 	window = 6
 	#Ticks before the next parry
-	# Default: 40
+	# Default: 100
 	# Range: 0 ~ 1200
 	cooldown = 40
 	#Ticks after a parry in which the next hit ripostes
@@ -56,7 +56,7 @@
 	# Range: 1.0 ~ 20.0
 	playerDamage = 2.0
 	#Ticks before the next backstab
-	# Default: 20
+	# Default: 60
 	# Range: 0 ~ 1200
 	cooldown = 20
 	#Exhaustion per backstab
@@ -64,7 +64,7 @@
 	# Range: 0.0 ~ 20.0
 	hunger = 0.20000000298023224
 	#Durability lost per backstab
-	# Default: 1
+	# Default: 2
 	# Range: 0 ~ 100
 	wear = 1
 
@@ -87,11 +87,11 @@
 	# Range: 0.0 ~ 5.0
 	knockback = 0.6000000238418579
 	#Stacks of Dented it adds
-	# Default: 1
+	# Default: 2
 	# Range: 0 ~ 10
 	dents = 1
 	#Ticks before the next slam
-	# Default: 60
+	# Default: 300
 	# Range: 0 ~ 1200
 	cooldown = 60
 	#Exhaustion per slam
@@ -99,7 +99,7 @@
 	# Range: 0.0 ~ 20.0
 	hunger = 1.0
 	#Durability lost per slam
-	# Default: 2
+	# Default: 4
 	# Range: 0 ~ 100
 	wear = 2
 
@@ -134,7 +134,7 @@
 	# Range: 0.0 ~ 5.0
 	knockback = 0.699999988079071
 	#Ticks before the next dive
-	# Default: 100
+	# Default: 300
 	# Range: 0 ~ 1200
 	cooldown = 100
 	#Exhaustion per slam
@@ -164,7 +164,7 @@
 	# Range: 0.0 ~ 10.0
 	knockback = 2.0
 	#Ticks of Confused on the target
-	# Default: 40
+	# Default: 60
 	# Range: 0 ~ 1200
 	confuseTicks = 40
 	#What whatever it is hurled into takes, as a share of the true damage
@@ -172,7 +172,7 @@
 	# Range: 0.0 ~ 5.0
 	chainShare = 0.5
 	#Ticks before the next
-	# Default: 80
+	# Default: 200
 	# Range: 0 ~ 1200
 	cooldown = 80
 	#Ticks before the next after a swing at nothing
@@ -207,7 +207,7 @@
 	# Range: 0 ~ 10
 	dents = 3
 	#Ticks before the next pull
-	# Default: 100
+	# Default: 200
 	# Range: 0 ~ 1200
 	cooldown = 100
 	#Exhaustion per pull
@@ -234,11 +234,11 @@
 	# Range: 0.0 ~ 20.0
 	damage = 1.5
 	#Ticks before the next lunge
-	# Default: 60
+	# Default: 100
 	# Range: 0 ~ 1200
 	cooldown = 60
 	#Exhaustion per lunge
-	# Default: 0.6000000238418579
+	# Default: 1.0
 	# Range: 0.0 ~ 20.0
 	hunger = 0.6000000238418579
 	#Durability lost when the thrust lands
@@ -257,7 +257,7 @@
 	# Range: 0.0 ~ 20.0
 	damage = 2.0
 	#Ticks of Bleeding III
-	# Default: 600
+	# Default: 100
 	# Range: 0 ~ 12000
 	bleedTicks = 600
 	#Chance a kill drops the head
@@ -265,7 +265,7 @@
 	# Range: 0.0 ~ 1.0
 	headChance = 0.10000000149011612
 	#Ticks before the next
-	# Default: 80
+	# Default: 400
 	# Range: 0 ~ 1200
 	cooldown = 80
 	#Ticks before the next after a swing at nothing
@@ -273,11 +273,11 @@
 	# Range: 0 ~ 1200
 	missCooldown = 20
 	#Exhaustion per strike
-	# Default: 0.800000011920929
+	# Default: 1.0
 	# Range: 0.0 ~ 20.0
 	hunger = 0.800000011920929
 	#Durability lost per strike
-	# Default: 2
+	# Default: 4
 	# Range: 0 ~ 100
 	wear = 2
 
@@ -296,7 +296,7 @@
 	# Range: 0.0 ~ 5.0
 	knockback = 0.5
 	#Ticks before the next
-	# Default: 80
+	# Default: 200
 	# Range: 0 ~ 1200
 	cooldown = 80
 	#Exhaustion per sweep
@@ -304,7 +304,7 @@
 	# Range: 0.0 ~ 20.0
 	hunger = 1.0
 	#Durability lost: one per thing struck, up to this
-	# Default: 3
+	# Default: 5
 	# Range: 1 ~ 100
 	maxWear = 3
 
@@ -314,3 +314,13 @@
 	# Default: 0.3
 	# Range: 0.0 ~ 1.0
 	frontHeadProjectileSoften = 0.3
+
+#Hurt cooldowns that match the weapon (combat/HitCooldowns): a player's hit leaves its target protected
+#only for the weapon's own interval (its swing, draw, charge or refire), not vanilla's half second
+[hitCooldown]
+	#Off: every hit leaves vanilla's 10 ticks
+	enabled = true
+	#The shortest it can be, ticks (vanilla's is 10)
+	# Default: 2
+	# Range: 1 ~ 10
+	floor = 2
