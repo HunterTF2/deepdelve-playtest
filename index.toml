@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/.deepdelve-abilities.toml.defaults"
-hash = "244f81318be5cab190f1f7b215e84b0e9bb574b2834583fd363ad6588ae004bb"
+hash = "fa1d5a4e5dcd33e1d6a5d9fa78240bc8a49f92f1d61f0bbe8648b364654b57bc"
 
 [[files]]
 file = "config/.deepdelve-common.toml.defaults"
-hash = "9c44e6c8d1a22144dfdbe090052c20504b10a1d2f24964b294d1a5f1262a5122"
+hash = "68eca17b9c30b577d1285fc86d16bfd5a138721a394363c1b398cdd2b5d41f27"
 
 [[files]]
 file = "config/ali/ali_common.json"
@@ -60,7 +60,7 @@ preserve = true
 
 [[files]]
 file = "config/deepdelve-abilities.toml"
-hash = "fca06a228a3cede52a41c84d87dadd9c53a8a9fd00b0e6904b6d56ef16342efa"
+hash = "40a373135db8bf7c7b6dcdd71e55a54ef049072540e6178de5892a53e2825aaa"
 
 [[files]]
 file = "config/deepdelve-common.toml"
@@ -228,7 +228,7 @@ metafile = true
 
 [[files]]
 file = "mods/deepdelve.pw.toml"
-hash = "ced460671bb8ae8d41aa0147c90e403a6effb8a1759c984ee4c2ad619789a029"
+hash = "43ade87fb8b7f8fa5eba782089c169d07a561fc5ac908cfe213e806809fdd45b"
 metafile = true
 
 [[files]]

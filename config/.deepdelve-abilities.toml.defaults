@@ -1,5 +1,5 @@
 #DeepDelve's defaults when this config last loaded (config/ConfigDefaults). Don't edit.
-#Wed Nov 25 02:28:46 EST 2026
+#Fri Nov 27 21:04:00 EST 2026
 backstab.cooldown=60
 backstab.damage=3.0
 backstab.hunger=0.20000000298023224
@@ -58,6 +58,27 @@ pull.hunger=0.6000000238418579
 pull.step=0.75
 pull.stunTicks=60
 pull.wear=2
+shieldBash.arc=60.0
+shieldBash.bossDamage=1.0
+shieldBash.cooldown=100
+shieldBash.damage=2.0
+shieldBash.heftCooldown=120
+shieldBash.heftDamage=20.0
+shieldBash.heftPush=3.0
+shieldBash.hunger=0.3
+shieldBash.push=0.5
+shieldBash.reach=3.0
+shieldBash.staggerTicks=20
+shieldBash.targets=3
+shieldBash.wear=1
+shieldCharge.cooldown=300
+shieldCharge.damageShare=0.6
+shieldCharge.dash=1.8
+shieldCharge.hunger=0.6
+shieldCharge.push=0.6
+shieldCharge.staggerTicks=20
+shieldCharge.wear=1
+shieldCharge.window=8
 slam.charge=10
 slam.cooldown=300
 slam.damageShare=0.5

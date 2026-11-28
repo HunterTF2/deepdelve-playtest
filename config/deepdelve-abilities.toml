@@ -324,3 +324,94 @@
 	# Default: 2
 	# Range: 1 ~ 10
 	floor = 2
+
+#Shield bash (combat/ShieldBash): attack with a shield raised in the off hand. Heft is the face's weight
+#on the shield's scale (iron 0.0225, osmium 0.1125)
+[shieldBash]
+	#Blocks it reaches
+	# Default: 3.0
+	# Range: 0.5 ~ 8.0
+	reach = 3.0
+	#Degrees of the arc ahead it strikes in
+	# Default: 60.0
+	# Range: 5.0 ~ 180.0
+	arc = 60.0
+	#The most it strikes
+	# Default: 3
+	# Range: 1 ~ 16
+	targets = 3
+	#Damage before heft
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	damage = 2.0
+	#Damage per square root of heft
+	# Default: 20.0
+	# Range: 0.0 ~ 200.0
+	heftDamage = 20.0
+	#Damage a boss adds
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	bossDamage = 1.0
+	#Push before heft
+	# Default: 0.5
+	# Range: 0.0 ~ 5.0
+	push = 0.5
+	#Push per square root of heft
+	# Default: 3.0
+	# Range: 0.0 ~ 20.0
+	heftPush = 3.0
+	#Ticks of Staggered on each one struck
+	# Default: 20
+	# Range: 0 ~ 1200
+	staggerTicks = 20
+	#Ticks before the next bash, before heft (Hunter, 2026-11-26: 5 s)
+	# Default: 100
+	# Range: 0 ~ 1200
+	cooldown = 100
+	#Ticks more per unit of heft
+	# Default: 120
+	# Range: 0 ~ 12000
+	heftCooldown = 120
+	#Exhaustion per bash
+	# Default: 0.3
+	# Range: 0.0 ~ 20.0
+	hunger = 0.3
+	#Durability lost per bash
+	# Default: 1
+	# Range: 0 ~ 100
+	wear = 1
+
+#Buckler charge (combat/ShieldBash): attack with a buckler raised in the off hand
+[shieldCharge]
+	#How hard the dash pushes you forward (the rapier's lunge is 1.15)
+	# Default: 1.8
+	# Range: 0.0 ~ 5.0
+	dash = 1.8
+	#Ticks after the dash in which the first thing met is struck
+	# Default: 8
+	# Range: 1 ~ 200
+	window = 8
+	#Its damage, as a share of a bash's with the same shield
+	# Default: 0.6
+	# Range: 0.0 ~ 10.0
+	damageShare = 0.6
+	#Push, added to the bash's
+	# Default: 0.6
+	# Range: 0.0 ~ 5.0
+	push = 0.6
+	#Ticks of Staggered on the one struck
+	# Default: 20
+	# Range: 0 ~ 1200
+	staggerTicks = 20
+	#Ticks before the next charge (Hunter, 2026-11-26: 15 s, a strong move)
+	# Default: 300
+	# Range: 0 ~ 1200
+	cooldown = 300
+	#Exhaustion per charge
+	# Default: 0.6
+	# Range: 0.0 ~ 20.0
+	hunger = 0.6
+	#Durability lost per charge
+	# Default: 1
+	# Range: 0 ~ 100
+	wear = 1
