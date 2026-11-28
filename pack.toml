@@ -1,12 +1,12 @@
 name = "DeepDelve Playtest"
 author = "Hunter"
-version = "0.3.2b"
+version = "0.3.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "3aeb373627dec8617b8daf089e19de636125d20beddf66eb82465eef8ef403f9"
+hash = "850ca1252060b20b6921499d40816634a1328a7216008375428c7997f6581649"
 
 [versions]
 minecraft = "26.2"

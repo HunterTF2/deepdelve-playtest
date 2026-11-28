@@ -2,7 +2,7 @@
 # Iris reads this file when it sits next to the pack in .minecraft/shaderpacks with the
 # pack's exact name; it rewrites it (dropping these comments) if the player changes a setting.
 AAA_THIS_IS_A_EUPHORIA_PATCHES_SETTINGS_FILE=true
-AAB_FOR_EUPHORIA_PATCHES_VERSION_1_10_5=true
+AAB_FOR_EUPHORIA_PATCHES_VERSION_1_11_2=true
 # Off: under Iris 1.11 on 26.2 it makes tinted particles (smoke, ash, dust, gas) glow on and off
 # at random. Fire, lava, redstone, ender and crying obsidian particles still glow (the pack's IPBR).
 GLOWING_COLORED_PARTICLES=false

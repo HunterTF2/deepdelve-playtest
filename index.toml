@@ -228,7 +228,7 @@ metafile = true
 
 [[files]]
 file = "mods/deepdelve.pw.toml"
-hash = "11d02355ae98172739512dc65a9abbb7d015e8d0d5d8f5e4c4d002fff059cecb"
+hash = "ced460671bb8ae8d41aa0147c90e403a6effb8a1759c984ee4c2ad619789a029"
 metafile = true
 
 [[files]]
@@ -396,13 +396,13 @@ file = "servers.dat"
 hash = "2d6f605c38eb2d541edf8924887a190c45c45430f3ab4d2d0772ef7eafedc4db"
 
 [[files]]
-file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "0c39b5b38db33534a266e146e56dc13b15b40053ae759d566c78eba5d6f1fc2b"
+file = "shaderpacks/ComplementaryReimagined_r5.10 + EuphoriaPatches_1.11.2.txt"
+hash = "1a65011f4ed38da603972da6dc4eebc275f69b4c83bdedee99b9a2ba0376702a"
 preserve = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "0c39b5b38db33534a266e146e56dc13b15b40053ae759d566c78eba5d6f1fc2b"
+file = "shaderpacks/ComplementaryUnbound_r5.10 + EuphoriaPatches_1.11.2.txt"
+hash = "1a65011f4ed38da603972da6dc4eebc275f69b4c83bdedee99b9a2ba0376702a"
 preserve = true
 
 [[files]]
